@@ -19,22 +19,31 @@
       <div class="row">
 
         <div id="header">
+          <a style="color: white; float: left; margin-left: 8%; font-size: 27px; margin-top: 15px;"
+          href="minhas-receitas.html">ADICIONAR RECEITA</a>
           <img src="receitou-logo-nome.png" width="10%" height="100%" style="float: right; margin-right: 8%;" />
         </div>
 
         <div id="container-imagem">
-          <h1 style="text-align: center; margin-top: 225px; font-family: initial; font-size: 60px;">Todas as receitas que desejar</h1>
-          <h2 style="text-align: center; font-family: cursive; font-size: 35px;">com os alimentos que você tiver!</h2>
-
-          <br />
-          <br />
-
-          <div style="margin-left: 30%">
-            <input id="txtbusca" name="txtbusca" type="text" placeholder="Digite o que você procura" />
-            <input id="btnBusca" type="submit" value="Ok" onclick="aplicarConteudo()" />
+          <div style="margin-left: 22%; margin-top: 1%;">
+            <h4 class="borda_texto" style="font-size: 30px; font-weight: bold; color: #ff8a4a;">Título da Receita:</h4>
+            <input id="txtbusca" name="txtbusca" type="text" style="background-color: white" />
+            <br />
+            <br />
+            <br />
+            <h4 class="borda_texto" style="margin-top: 1%; font-weight: bold; font-size: 30px; color: #ff8a4a;">Ingredientes:</h4>
+            <textarea id="txtbusca" name="corpo" rows="15" cols="100" style="background-color: white; width: 65%; height: 90px;"></textarea>
+            <br />
+            <br />
+            <br />
+            <h4 class="borda_texto" style="margin-top: 4%; font-weight: bold; font-size: 30px; color: #ff8a4a;">Passo-a-Passo:</h4>
+            <textarea id="txtbusca" name="corpo" rows="15" cols="100" style="background-color: white; width: 65%; height: 200px;"></textarea>
+            <br />
+            <br />
+            <br />
+            <input id="btnBusca" type="submit" value="Ok" onclick="mostrarMensagem()"
+            style="margin-top: 15%; margin-left: -65%; width: 100px;" />
           </div>
-
-          <a><i class="fas fa-heart" /></a>
         </div>
 
         <div id="lateral">

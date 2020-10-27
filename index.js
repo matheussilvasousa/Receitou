@@ -1,16 +1,14 @@
 var txtBusca;
-var receitasFavoritas = ["OMELETE CREMOSO DE QUEIJO", "RISOTO DE CAMARÃO"];
-
-function favoritar(isFavorito) {
-	if(!isFavorito) {
-		document.getElementById('c1').style.display = 'none';
-	}
-}
 
 function aplicarConteudo() {
 	this.txtBusca = document.getElementById('txtbusca').value
 	console.log("A receita será sobre " + this.txtBusca);
 	redirecionar();
+}
+
+function mostrarMensagem() {
+	this.txtBusca = document.getElementById('txtbusca').value
+	alert("A receita '" + this.txtBusca + "' foi criada com sucesso!");
 }
 
 function getCabeçalho() {
@@ -46,7 +44,6 @@ function getReceita(txtBusca) {
 function getReceitaEnsopado(txtBusca) {
 	var titulo = "ENSOPADO DE " + txtBusca.toUpperCase();
 	var txtReceita = "<h3 class='borda_texto' style='color: #ff8a4a; font-weight: bold; font-size: 50px; text-align: center;'>" + titulo + "</h3>"
-					+ "<a><i class='fa fa-heart' style='margin-right: 5%; font-size: 25px;''></i></a>"
 					+ "<div style='margin-left: 20%; margin-top: 2%;'>"
 						+ "<h5>Ingredientes:</h5>" 
 						+ "<ul>"
